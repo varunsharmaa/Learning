@@ -31,17 +31,22 @@ console.log(`
     -----------------Slice------------------------
 `);
 
-let sliceArray = [2,4,5,3,8,9,0,7];
-console.log(`
-    Original Array: ${sliceArray}
-`);
+const animals = ['ant', 'bison', 'camel', 'duck', 'elephant'];
 
-let slice = sliceArray.slice(0,2);
-/* start index and number of elements to delete */
-console.log(`
-    Return From Slice: ${slice}
-`);
+console.log(animals.slice(2));
+// expected output: Array ["camel", "duck", "elephant"]
 
-console.log(`
-    Array after Slice: ${sliceArray}
-`);
+console.log(animals.slice(2, 4));
+// expected output: Array ["camel", "duck"]
+
+console.log(animals.slice(1, 5));
+// expected output: Array ["bison", "camel", "duck", "elephant"]
+
+console.log(animals.slice(-2));
+// expected output: Array ["duck", "elephant"]
+
+console.log(animals.slice(2, -1));
+// expected output: Array ["camel", "duck"]
+
+console.log(animals.slice());
+// expected output: Array ["ant", "bison", "camel", "duck", "elephant"]
