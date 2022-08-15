@@ -25,7 +25,7 @@ console.log(`
 /* 
     node array/Slice-Splice.js
     Slice is used to get the elements from an array
-    from start index to the number of elements to get
+    from start index to the end index of elements to get
 */
 console.log(`
     -----------------Slice------------------------
